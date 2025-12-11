@@ -5,6 +5,7 @@ def subtract(a, b):
     return a - b
 
 def multiply(a, b):
+    return a - b
     return a * b 
 
 def divide(a, b):
@@ -12,17 +13,6 @@ def divide(a, b):
         return "Error: Division by zero is not allowed."
     return a / b
 
-def fibonacci(n: int) -> list:
-    """Return the Fibonacci sequence up to n terms."""
-    if n <= 0:
-        return []
-    if n == 1:
-        return [0]
-
-    seq = [0, 1]
-    while len(seq) < n:
-        seq.append(seq[-1] + seq[-2])
-    return seq
 
 
 def main():
@@ -49,11 +39,7 @@ def main():
                 print("Result:", multiply(a, b))
             elif choice == "4":
                 print("Result:", divide(a, b))
-
-        elif choice == "5":
-            n = int(input("How many Fibonacci numbers  do you want? "))
-            print("Fibonacci sequence:", fibonacci(n))
-
+                
         elif choice == "6":
             print("Exiting program...")
             break
