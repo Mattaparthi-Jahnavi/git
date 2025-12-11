@@ -6,6 +6,7 @@ def subtract(a, b):
 
 def multiply(a, b):
     return a - b
+    return a * b 
 
 def divide(a, b):
     if b == 0:
@@ -21,7 +22,7 @@ def main():
     print("3. Multiplication")
     print("4. Division")
     print("5. Fibonacci")
-    print("6. Exit")
+    print("6. Exit & END")
 
     while True:
         choice = input("\nEnter your choice (1-6): ")
